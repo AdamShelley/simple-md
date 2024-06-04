@@ -7,12 +7,13 @@
     "skipLibCheck": true,
     "strict": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
     "types": ["node"],
     "baseUrl": ".",
     "paths": {
       "#preload": ["../preload/src/index"],
-      "/@/*": ["./src/*"]
+      "/@/*": ["./src/*"] 
     },
     "lib": ["ESNext", "dom", "dom.iterable"]
   },
