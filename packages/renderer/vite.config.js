@@ -3,6 +3,7 @@
 import {chrome} from '../../.electron-vendors.cache.json';
 import {renderer} from 'unplugin-auto-expose';
 import {join} from 'node:path';
+import { builtinModules } from 'node:module';
 
 const PACKAGE_ROOT = __dirname;
 const PROJECT_ROOT = join(PACKAGE_ROOT, '../..');
@@ -33,6 +34,7 @@ const config = {
     assetsDir: '.',
     rollupOptions: {
       input: join(PACKAGE_ROOT, 'index.html'),
+      
     },
     emptyOutDir: true,
     reportCompressedSize: false,

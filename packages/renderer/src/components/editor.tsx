@@ -24,9 +24,7 @@ const Editor: React.FC<EditorProps> = ({initialDoc, onChange}) => {
     <div
       className="editor-wrapper"
       ref={refContainer}
-    >
-      Editor
-    </div>
+    ></div>
   );
 };
 

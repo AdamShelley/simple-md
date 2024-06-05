@@ -3,7 +3,7 @@
   "description": "Electron Markdown-mini app",
   "version": "2.0.0",
   "private": false,
- 
+  "type": "module",
   "main": "packages/main/dist/index.js",
   "scripts": {
     "build": "npm run build:main && npm run build:preload && npm run build:renderer",
@@ -46,15 +46,23 @@
     "@codemirror/state": "^6.4.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@codemirror/view": "^6.27.0",
+    "@lezer/highlight": "^1.2.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "electron-updater": "6.1.8",
+    "github-markdown-css": "^5.5.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "rehype-react": "^8.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-parse-frontmatter": "^1.0.3",
+    "remark-rehype": "^11.1.0",
+    "unified": "^11.0.4"
   },
   "nano-staged": {
     "*.{js,jsx,ts,tsx}": [
-
       "git add"
     ]
   }
